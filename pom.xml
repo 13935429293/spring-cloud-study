@@ -10,7 +10,11 @@
 
 	<modules>
 		<module>provider-user</module>
-		<module>consumer-movie</module>
+		<module>provider-user-i2</module>
+		<module>customer-movie</module>
+		<module>customer-movie-ribbon</module>
+		<module>customer-movie-ribbon-customizing</module>
+		<module>discovery-eureka-server</module>
 	</modules>
 
 	<parent>
