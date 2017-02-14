@@ -1,4 +1,4 @@
-package org.ywb.study.controller.entity;
+package org.ywb.study.entity;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

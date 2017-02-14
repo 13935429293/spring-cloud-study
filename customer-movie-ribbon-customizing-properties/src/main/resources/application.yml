@@ -1,0 +1,22 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: customer-movie-ribbon-customizing
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://user:password@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}} #自定义注册实例的格式
+    # leaseRenewalIntervalInSeconds: 10 # change the time register service time 修改服务注册时间慢的问题
+
+# 通过配置文件来修改 ribbonClient 的负载均衡策略
+# see http://cloud.spring.io/spring-cloud-static/Camden.SR5/#_customizing_the_ribbon_client_using_properties
+provider-user: # 对应微服务的 service_id
+  ribbon:
+      NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
