@@ -18,6 +18,7 @@
 		<module>customer-movie-ribbon-customizing</module>
 		<module>customer-movie-ribbon-customizing-properties</module>
 		<module>discovery-eureka-server</module>
+		<module>discovery-eureka-server-ha</module>
 	</modules>
 
 	<parent>
