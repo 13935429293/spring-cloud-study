@@ -1,10 +1,10 @@
 # 添加对eureka的认证，需要引入 spring-boot-start-security 的依赖
-security:
-  basic:
-    enabled: true
-  user:
-    name: user
-    password: password
+#security:
+#  basic:
+#    enabled: true
+#  user:
+#    name: user
+#    password: password
 server:
   port: 8761
 eureka:
@@ -12,7 +12,7 @@ eureka:
     register-with-eureka: false   #单机模式下，不需要被自己注册，eureka本身是server，也是client
     fetch-registry: false
     service-url:
-      defauleZone: http://user:password@localhost:${server.port}/eureka #http://localhost:8761/eureka，在服务注册是机器上访问也需要使用curl格式的权限认证 false
+      defauleZone: http://localhost:${server.port}/eureka #http://user:password@localhost:8761/eureka，在服务注册是机器上访问也需要使用curl格式的权限认证 false
   # server: # 配置eureka踢掉无用的节点
     # enable-self-preservation: false # 设为false，关闭自我保护
     # eviction-interval-timer-in-ms: 10000     # 清理间隔（单位毫秒，默认是60*1000）

@@ -1,8 +1,12 @@
 package org.ywb.study.config;
 
 import feign.Contract;
+import feign.Feign;
+import feign.Logger;
+import feign.auth.BasicAuthRequestInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Scope;
 import org.ywb.study.annotation.ExcludeFromComponentScan;
 
 /**
@@ -12,10 +16,13 @@ import org.ywb.study.annotation.ExcludeFromComponentScan;
  */
 @ComponentScan
 @ExcludeFromComponentScan
-public class MyFeignConfiguration {
+public class MyFeignConfiguration2 {
 
     @Bean
-    public Contract feignContract() {
-        return new feign.Contract.Default();
+    public BasicAuthRequestInterceptor basicAuthRequestInterceptor() {
+        return new BasicAuthRequestInterceptor("user", "password");
     }
+
+
+
 }
