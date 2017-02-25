@@ -2,30 +2,30 @@ package org.ywb.study.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.ywb.study.dao.UserRepository;
+import org.ywb.study.client.UserFeignClient;
 import org.ywb.study.entity.User;
 
 /**
  * Created by Administrator on 2017/2/11.
  */
 @RestController
-public class UserController {
+public class MovieController {
 
     @Autowired
-    private UserRepository userRepository;
+    private UserFeignClient userFeignClient;
 
-    @GetMapping("/simple/{id}")
+    @GetMapping("/movie/{id}")
     public User findById(@PathVariable("id") Long id){
-    return this.userRepository.findOne(id);
+        return this.userFeignClient.findById(id);
     }
 
-    @PostMapping("/user")
-    public User postUser(@RequestBody User user){
-        return user;
+    @GetMapping("/user")
+    public User user(User user){
+        return this.userFeignClient.postUser(user);
     }
 
     @GetMapping("/get-user")
     public User getUser(User user){
-        return user;
+        return this.userFeignClient.getUser(user);
     }
 }

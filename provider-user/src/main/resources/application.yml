@@ -28,4 +28,4 @@ eureka:
   instance:
     prefer-ip-address: true # 将服务的地址映射为ip
     instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}} #自定义注册实例的格式
-    leaseRenewalIntervalInSeconds: 10 # change the time register service time 修改服务注册时间慢的问题
+    # leaseRenewalIntervalInSeconds: 10 # change the time register service time 修改服务注册时间慢的问题, 修改之后可能会造成使用feign调用时响应超时的问题
