@@ -1,7 +1,9 @@
 package org.ywb.study.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
 import org.ywb.study.client.UserFeignClient;
 import org.ywb.study.entity.User;
 

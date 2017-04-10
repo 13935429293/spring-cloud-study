@@ -28,4 +28,14 @@ public class UserController {
     public User getUser(User user){
         return user;
     }
+
+    @PostMapping(value = "/user")
+    public User postUser(@RequestBody User user){
+        return user;
+    }
+
+    @GetMapping(value = "/get-user")
+    public User getUser(User user){
+        return user;
+    }
 }
