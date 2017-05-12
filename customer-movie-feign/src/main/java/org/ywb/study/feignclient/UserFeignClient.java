@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.ywb.study.entity.User;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/2/14
  * Time: 10:35
  */

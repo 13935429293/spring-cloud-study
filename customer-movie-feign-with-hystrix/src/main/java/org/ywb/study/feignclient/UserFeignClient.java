@@ -9,7 +9,7 @@ import org.ywb.study.entity.User;
 import org.ywb.study.feignclient.fallbackImpl.UserFeignFallBackClient;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/2/14
  * Time: 10:35
  */

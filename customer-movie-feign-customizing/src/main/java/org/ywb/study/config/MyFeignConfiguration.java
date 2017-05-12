@@ -6,7 +6,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.ywb.study.annotation.ExcludeFromComponentScan;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/2/14
  * Time: 11:10
  */

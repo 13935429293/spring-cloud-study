@@ -6,7 +6,7 @@ import org.ywb.study.entity.User;
 import org.ywb.study.feignclient.UserFeignClient;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/2/18
  * Time: 16:34
  */

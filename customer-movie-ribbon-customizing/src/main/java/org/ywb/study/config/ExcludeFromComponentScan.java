@@ -1,7 +1,7 @@
 package org.ywb.study.config;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/2/13
  * Time: 18:08
  */

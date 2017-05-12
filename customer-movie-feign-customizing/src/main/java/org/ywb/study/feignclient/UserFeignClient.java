@@ -8,7 +8,7 @@ import org.ywb.study.config.MyFeignConfiguration;
 import org.ywb.study.entity.User;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/2/14
  * Time: 10:35
  * see: https://github.com/OpenFeign/feign

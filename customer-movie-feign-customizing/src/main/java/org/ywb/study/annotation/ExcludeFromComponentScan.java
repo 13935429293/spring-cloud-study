@@ -1,7 +1,7 @@
 package org.ywb.study.annotation;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/2/14
  * Time: 11:11
  */

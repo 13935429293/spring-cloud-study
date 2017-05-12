@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.ywb.study.entity.User;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/2/18
  * Time: 16:34
  */

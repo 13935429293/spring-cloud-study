@@ -10,7 +10,7 @@ import org.ywb.study.feignclient.UserFeignClient;
 import org.ywb.study.feignclient.UserFeignClientEx;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/2/20
  * Time: 15:56
  */
